@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Haven</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Front Page Image -->
+        <img src="/img/coffee_shop.jpg" alt="Coffee Banner" class="banner-image">
+        
+        <h1>Coffee Haven</h1>
+        <p>Your perfect cup of coffee awaits!</p>
+        <button class="open-modal" onclick="showModal()">Join Us</button>
+        
+        <!-- Modal Overlay -->
+        <div class="modal-overlay" id="modalOverlay">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Welcome to Coffee Haven!</h2>
+                    <!-- Close Button -->
+                    <img src="/img/close_icon.png" class="close-btn" onclick="hideModal()" alt="Close">
+                </div>
+                <hr>
+                <img src="/img/fresh-coffee.jpg" alt="Coffee Icon" class="modal-icon">
+                <hr>
+                <div class="form-section">
+                    <strong>📧 Email:</strong><br>
+                    <input type="email" placeholder="example@coffeehaven.com"><br><br>
+                    <strong>🤫 Password:</strong><br>
+                    <input type="password" placeholder="********">
+                </div>
+                <button class="submit-button">Join Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
